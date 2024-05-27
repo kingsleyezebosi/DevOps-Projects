@@ -13,7 +13,9 @@ tree DevOps_Materials
 
 Create an html folder directory inside the var/www/ path.
 
-`sudo mkdir -p /var/www/html`
+```javascript
+sudo mkdir -p /var/www/html
+```
 
 And then, ls /var/www/
 
@@ -21,19 +23,25 @@ And then, ls /var/www/
 
 On the client machine, remotely login to the remote server
 
-`sftp public ip of the remote server` or `sftp ubuntu@public ip of the remote server`
+```javascript
+sftp public ip of the remote server` or `sftp ubuntu@public ip of the remote server
+```
 
 ![Alt text](<Images/remote connection to the server established.PNG>)
 
 On the client machine, cd into the /var/www/html path
 
-`cd /var/www/html`
+```javascript
+cd /var/www/html
+```
 
 ![Alt text](<Images/cd into the var, www and html path.PNG>)
 
 Initiate the folder directory transfer from the client machine to the remote server
 
-`put -r DevOps_Materials`
+```javascript
+put -r DevOps_Materials
+```
 
 And I got an error saying "Entering DevOps_Materials/ stat remote: No such file or directory"
 
@@ -41,19 +49,25 @@ And I got an error saying "Entering DevOps_Materials/ stat remote: No such file 
 
 To resolve this, I would have to create the folder "DevOps_Materials" in the remote server.
 
-`sudo mkdir -p /var/www/html/DevOps_Materials`
+```javascript
+sudo mkdir -p /var/www/html/DevOps_Materials
+```
 
 ![Alt text](<Images/create the DevOps folder in the remote server.PNG>)
 
 Return to the client and reinitiate the upload again. You will get an error saying "Couldn't setstat on "/var/www/html/DevOps_Materials" : Permission Denied". Return back to the remote server and run the below command.
 
-`sudo chown ubuntu:ubuntu /var/www/html/DevOps_Materials`
+```javascript
+sudo chown ubuntu:ubuntu /var/www/html/DevOps_Materials
+```
 
 ![Alt text](<Images/permission denied when uploading.PNG>)
 
 Return to the client server and re-upload. The will now be successful.
 
-`put -r DevOps_Materials`
+```javascript
+put -r DevOps_Materials
+```
 
 ![Alt text](<Images/upload successful.PNG>)
 
