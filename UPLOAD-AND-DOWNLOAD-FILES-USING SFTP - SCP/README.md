@@ -5,7 +5,9 @@
 
 The below command will show you the entire folder directory structure. 
 
-`tree DevOps_Materials`
+```javascript
+tree DevOps_Materials
+```
 
 ![Alt text](<Images/tree dir structure.PNG>)
 
