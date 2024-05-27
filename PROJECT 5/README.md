@@ -4,11 +4,13 @@
 
 ## Shell Scripting Syntax Elements
 
-1. Variables: Bash allows you to defind and work with variables. Variables can store data of various type such as numbers, strings, and arrays. You can assign values to variables using the operator, and access their values using the variable name proceeded to a $ sign.
+1. Variables: Bash allows you to define and work with variables. Variables can store data of various type such as numbers, strings, and arrays. You can assign values to variables using the operator, and access their values using the variable name proceeded to a $ sign.
 
 Bash Shell Location 
 
-`which bash`
+```javascript
+which bash
+```
 
 #! /usr/bin/bash
 
