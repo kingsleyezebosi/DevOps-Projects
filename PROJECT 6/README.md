@@ -119,7 +119,7 @@ sudo systemctl restart mysql.service
 ![alt text](<Images/Restart mysql.PNG>)
 
 
-From the client, I ran the below command;
+From the client, I ran the below command to remote access to the mysql server;
 
 ```javascript
 mysql -u Client_user -p -h 172.31.9.122
