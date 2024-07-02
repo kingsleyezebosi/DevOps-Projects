@@ -36,7 +36,7 @@ The essential steps to creating a VPC and configuring core network services. The
 • Creating and configuring subnets
 
 
-#The Default VPC
+# The Default VPC
 
 The Default VPC is like a starter pack provided by Amazon for your cloud resources. It's a pre-configured space in the Amazon cloud where you can immediately start deploying your applications or services. It has built-in security and network settings to help you get up and running quickly, but you can adjust these as you see fit.
 
